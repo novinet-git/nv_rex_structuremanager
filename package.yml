@@ -1,0 +1,37 @@
+# Alle hier gesetzten Werte können über `$addon->getProperty($key)` abgefragt werden
+
+package: nv_structure_manager # Pflichtfeld
+version: '0.2-beta' # Pflichtfeld
+author: novinet GmbH & Co KG
+supportpage: https://www.novinet.de
+
+# Seiten
+page:
+    title: 'Kategorieverwaltung' # Werte die mit `translate:` beginnen, werden anhand der Sprachdatei übersetzt. Der Addon-Präfix (hier `demo_addon_`) kann weggelassen werden.
+    perm: nv_structure_manager[] # Seite ist nur für Admins erreichbar
+    icon: rex-icon rex-icon-media
+    subpages:
+        update:
+            title: 'Verwaltung'
+            icon: rex-icon fa-list
+        info:
+            title: 'Info'
+            icon: rex-icon fa-info
+            
+    
+# Abhängigkeiten
+# Anforderungen ans System oder anderere AddOns, um dieses AddOn installieren oder update zu können
+requires:
+    redaxo: '^5.5' # benötigt mindestens REDAXO 5.5
+    packages:
+        media_manager: '^2.0.1' # benötigt mindestens das Addon Media Manager 2.0.1
+    php:
+        version: '>=5.6' # benötigt mindestens PHP 5.6
+        extensions: [gd, xml] # benötigt die PHP-Extensions GDlib und XML
+
+# Konflikte
+# Verhindert die Installation und Updates, wenn AddOns die genannten Anforderungen erfüllen
+# Siehe auch https://github.com/FriendsOfREDAXO/cache_warmup/pull/55#issuecomment-280906737
+conflicts:
+    packages:
+        media_manager: '>=3' # Ist Media Manager in Version 3 vorhanden, führt das zum Konflikt mit diesem AddOn
