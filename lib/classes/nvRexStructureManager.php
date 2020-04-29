@@ -1,6 +1,6 @@
 <?php
 
-class nvStructureManager {
+class nvRexStructureManager {
 
 	public function __construct() {
 

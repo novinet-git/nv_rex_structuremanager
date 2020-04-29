@@ -1,14 +1,14 @@
 # Alle hier gesetzten Werte können über `$addon->getProperty($key)` abgefragt werden
 
-package: nv_structure_manager # Pflichtfeld
-version: '0.2-beta' # Pflichtfeld
+package: nv_rex_structuremanager # Pflichtfeld
+version: '1.0' # Pflichtfeld
 author: novinet GmbH & Co KG
 supportpage: https://www.novinet.de
 
 # Seiten
 page:
     title: 'Kategorieverwaltung' # Werte die mit `translate:` beginnen, werden anhand der Sprachdatei übersetzt. Der Addon-Präfix (hier `demo_addon_`) kann weggelassen werden.
-    perm: nv_structure_manager[] # Seite ist nur für Admins erreichbar
+    perm: nv_rex_structuremanager[] # Seite ist nur für Admins erreichbar
     icon: rex-icon rex-icon-media
     subpages:
         update:

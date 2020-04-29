@@ -2,10 +2,10 @@
 Addon zum kopieren und rekursiven Löschen von Kategorien
 
 ### Version
-0.2-beta
+1.0
 
 ### Stand
-13.02.2019
+29.04.2020
 
 ### Autor
 Daniel Steffen

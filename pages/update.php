@@ -1,6 +1,6 @@
 <?php
-$oManager = new nvStructureManager();
-$csrfToken = rex_csrf_token::factory('nv_structure_manager');
+$oManager = new nvRexStructureManager();
+$csrfToken = rex_csrf_token::factory('nv_rex_structuremanager');
 
 
 
